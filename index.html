@@ -237,6 +237,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 0.75rem;
+            grid-auto-rows: 1fr;
         }
 
         .admin-card {
@@ -246,6 +247,7 @@
             padding: 0.875rem;
             transition: all 0.3s ease;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            height: 100%;
         }
 
         .admin-card:hover {
@@ -363,7 +365,7 @@
         <section class="section">
             <div class="section-header">
                 <h3 class="section-title">Development Tools</h3>
-                <span class="section-badge">8 Resources</span>
+                <span class="section-badge">6 Resources</span>
             </div>
             <div class="card-grid">
                 <a href="http://backstage.cit.regionals.miamioh.edu" target="_blank">
@@ -438,6 +440,22 @@
                 <span class="section-badge">Admin Only</span>
             </div>
             <div class="admin-grid">
+                <a href="http://jenkins-prod.cit.regionals.miamioh.edu:8080" target="_blank">
+                    <div class="admin-card">
+                        <div class="admin-icon">🔧</div>
+                        <h4 class="admin-title">Jenkins Production</h4>
+                        <span class="admin-badge">Admin Access</span>
+                    </div>
+                </a>
+
+                <a href="http://rancher-prod.cit.regionals.miamioh.edu" target="_blank">
+                    <div class="admin-card">
+                        <div class="admin-icon">☸️</div>
+                        <h4 class="admin-title">Rancher Production</h4>
+                        <span class="admin-badge">Admin Access</span>
+                    </div>
+                </a>
+
                 <a href="https://cit-vc.regionals.miamioh.edu/ui" target="_blank">
                     <div class="admin-card">
                         <div class="admin-icon">🖥️</div>
@@ -459,24 +477,6 @@
                         <div class="admin-icon">📋</div>
                         <h4 class="admin-title">Server Admin Trello</h4>
                         <span class="admin-badge">Project Management</span>
-                    </div>
-                </a>
-
-                <a href="http://jenkins-prod.cit.regionals.miamioh.edu:8080" target="_blank">
-                    <div class="card">
-                        <div class="card-icon orange">J</div>
-                        <h4 class="card-title">Jenkins Production</h4>
-                        <p class="card-description">Production deployment pipelines and automation.</p>
-                        <span class="card-link">Access Jenkins Prod</span>
-                    </div>
-                </a>
-                               
-                <a href="http://rancher-prod.cit.regionals.miamioh.edu" target="_blank">
-                    <div class="card">
-                        <div class="card-icon green">R</div>
-                        <h4 class="card-title">Rancher Production</h4>
-                        <p class="card-description">Production Kubernetes cluster and container orchestration.</p>
-                        <span class="card-link">Open Rancher Prod</span>
                     </div>
                 </a>
             </div>
